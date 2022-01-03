@@ -1,0 +1,135 @@
+:root {
+  --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  --border: 1.5px solid #1e1e1e;
+  --radius: 5px;
+  --accent-color: #ff5308;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #e1e1e1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+.nav {
+  display: flex;
+  height: 10vh;
+  width: 90vw;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: #010101;
+}
+
+.app {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search {
+  width: 400px;
+  padding: 10px;
+  border: var(--border);
+  border-radius: var(--radius);
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.button {
+  background-color: var(--accent-color);
+  width: 100px;
+  height: 40px;
+  padding: 10px 20px;
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  color: #e1e1e1;
+}
+
+.paginated_button {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #e1e1e1;
+  border: none;
+  margin-right: 10px;
+}
+
+.paginated_button:last-child() {
+  margin-right: 0;
+}
+
+.paginated {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  border: var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 35px;
+  color: var(--accent-color);
+}
+
+.image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: var(--border);
+  margin: 15px 0;
+}
+
+.label {
+  line-height: 18px;
+}
+
+.link {
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  width: 80px;
+  height: 30px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  color: #e1e1e1;
+}
