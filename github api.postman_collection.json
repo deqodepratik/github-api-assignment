@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "bf44aac3-9da9-4dee-8b39-aa878226946a",
+		"name": "github api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get user details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/thepratiksah",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"thepratiksah"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get user details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/thepratiksah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"thepratiksah"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "275"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"113-kiz3SUDdNkqS0cvSSZFxKxsZU9E\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Jan 2022 09:57:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"_id\": \"61ce18267a904a3489b0a8ac\",\n        \"userName\": \"thepratiksah\",\n        \"image\": \"https://avatars.githubusercontent.com/u/25739004?v=4\",\n        \"followers\": 11,\n        \"following\": 17,\n        \"numberOfRepos\": 87,\n        \"memberSince\": \"2017-02-13T09:06:38.000Z\",\n        \"html_url\": \"https://github.com/ThePratikSah\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get user repo details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/repo/thepratiksah?page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"repo",
+						"thepratiksah"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"description": "Page number for pagination"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get user repo details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/repo/thepratiksah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"repo",
+								"thepratiksah"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2159"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"86f-zAtEEVUXNydulr3kJDK7ne/lOyY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Jan 2022 09:57:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"repo\": [\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb76f\",\n            \"repo_name\": \"1tapchat\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"NA\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/1tapchat\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb770\",\n            \"repo_name\": \"30daysOfFlutter\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"NA\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/30daysOfFlutter\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb771\",\n            \"repo_name\": \"auth-psql\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"NA\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/auth-psql\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb772\",\n            \"repo_name\": \"bakeology\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"A food recipe API based on NodeJS.\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/bakeology\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb773\",\n            \"repo_name\": \"blog\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"A blog by YUIO\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/blog\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb774\",\n            \"repo_name\": \"blog-cb\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"A minimal starter for Novela, the simplest way to start publishing with Gatsby.\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/blog-cb\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb775\",\n            \"repo_name\": \"blog-gatsby\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"🚀⚡️ Blazing fast blog built with Gatsby and the Cosmic Headless CMS 🔥\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/blog-gatsby\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb776\",\n            \"repo_name\": \"blog-gatsby-cb\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"🚀⚡️ Blazing fast blog built with Gatsby and the Cosmic Headless CMS 🔥\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/blog-gatsby-cb\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb777\",\n            \"repo_name\": \"bpd-app\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"NA\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/bpd-app\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61d33dae15ef4dd83ebbb778\",\n            \"repo_name\": \"cafe-app\",\n            \"owner_name\": \"thepratiksah\",\n            \"description\": \"NA\",\n            \"star_count\": \"0\",\n            \"repo_url\": \"https://github.com/ThePratikSah/cafe-app\",\n            \"__v\": 0\n        }\n    ],\n    \"total\": 3\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3300",
+			"type": "string"
+		}
+	]
+}
