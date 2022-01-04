@@ -3,9 +3,9 @@
 An application for fetching details of any Github handle.
 In this project we have used following dependencies.
 
-- [x] node
+- [x] node v16.13.0
 - [x] express
-- [x] react
+- [x] react v17.0.2
 - [x] cors
 - [x] axios
 - [x] eslint-config-prettier
