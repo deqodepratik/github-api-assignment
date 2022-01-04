@@ -1,0 +1,16 @@
+{
+  "name": "github-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -n 'server,client' -c 'red,green' \"cd server && yarn dev\" \"cd app && npm start\"",
+    "getpkg": "concurrently -n 'server,client' -c 'red,green' \"cd server && npm i\" \"cd ..\" \"cd app && npm i\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
